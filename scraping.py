@@ -38,5 +38,5 @@ for item in soup.find_all('img'):
     if not src:
         continue
 
-    img_url = urljoin(url, src)  # handles relative URLs
+    img_url = urljoin(url, src)
     download_image(img_url, folder)
